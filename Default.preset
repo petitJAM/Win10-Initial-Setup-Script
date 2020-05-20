@@ -142,6 +142,7 @@ SetVisualFXAppearance           # SetVisualFXPerformance
 # DisableChangingSoundScheme    # EnableChangingSoundScheme
 # EnableVerboseStatus           # DisableVerboseStatus
 DisableF1HelpKey                # EnableF1HelpKey
+SetCapsLockAsControlKey         # SetCapsLockAsCapsLockKey
 
 ### Explorer UI Tweaks ###
 # ShowExplorerTitleFullPath     # HideExplorerTitleFullPath

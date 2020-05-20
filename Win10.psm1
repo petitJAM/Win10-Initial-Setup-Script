@@ -2206,6 +2206,19 @@ Function EnableF1HelpKey {
 	Remove-Item "HKCU:\Software\Classes\TypeLib\{8cec5860-07a1-11d9-b15e-000d56bfe6ee}\1.0\0" -Recurse -ErrorAction SilentlyContinue
 }
 
+# Set CapsLock to be a Control key
+Function SetCapsLockAsControlKey {
+	Write-Output "Setting CapsLock as Control key..."
+	$hexified = "00,00,00,00,00,00,00,00,02,00,00,00,1d,00,3a,00,00,00,00,00".Split(',') | ForEach-Object { "0x$_"};
+	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layout" -Name "Scancode Map" -Type Binary -Value ([byte[]]$hexified)
+}
+
+# Set CapsLock to be a CapsLock key
+Function SetCapsLockAsCapsLockKey {
+	Write-Output "Setting CapsLock as CapsLock key..."
+	Remove-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Keyboard Layout" -Name "Scancode Map" -ErrorAction SilentlyContinue
+}
+
 ##########
 #endregion UI Tweaks
 ##########

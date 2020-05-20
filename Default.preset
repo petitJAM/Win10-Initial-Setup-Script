@@ -104,12 +104,12 @@ EnableNTFSLongPaths             # DisableNTFSLongPaths
 # DisableAutoRebootOnCrash      # EnableAutoRebootOnCrash
 
 ### UI Tweaks ###
-DisableActionCenter             # EnableActionCenter
-DisableLockScreen               # EnableLockScreen
+EnableActionCenter              # DisableActionCenter
+EnableLockScreen                # DisableLockScreen
 # DisableLockScreenRS1          # EnableLockScreenRS1
 HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
-HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
-DisableLockScreenBlur           # EnableLockScreenBlur
+ShowShutdownOnLockScreen        # HideShutdownFromLockScreen
+EnableLockScreenBlur            # DisableLockScreenBlur
 # DisableAeroShake              # EnableAeroShake
 DisableAccessibilityKeys        # EnableAccessibilityKeys
 ShowTaskManagerDetails          # HideTaskManagerDetails
@@ -117,20 +117,20 @@ ShowFileOperationsDetails       # HideFileOperationsDetails
 # EnableFileDeleteConfirm       # DisableFileDeleteConfirm
 HideTaskbarSearch               # ShowTaskbarSearchIcon         # ShowTaskbarSearchBox
 HideTaskView                    # ShowTaskView
-ShowSmallTaskbarIcons           # ShowLargeTaskbarIcons
+ShowLargeTaskbarIcons           # ShowSmallTaskbarIcons           
 SetTaskbarCombineWhenFull       # SetTaskbarCombineNever        # SetTaskbarCombineAlways
 HideTaskbarPeopleIcon           # ShowTaskbarPeopleIcon
 ShowTrayIcons                   # HideTrayIcons
 # ShowSecondsInTaskbar          # HideSecondsFromTaskbar
-DisableSearchAppInStore         # EnableSearchAppInStore
-DisableNewAppPrompt             # EnableNewAppPrompt
+EnableSearchAppInStore          # DisableSearchAppInStore
+EnableNewAppPrompt              # DisableNewAppPrompt
 # HideRecentlyAddedApps         # ShowRecentlyAddedApps
 # HideMostUsedApps              # ShowMostUsedApps
 # SetWinXMenuPowerShell         # SetWinXMenuCmd
 # SetControlPanelSmallIcons     # SetControlPanelLargeIcons     # SetControlPanelCategories
 DisableShortcutInName           # EnableShortcutInName
 # HideShortcutArrow             # ShowShortcutArrow
-SetVisualFXPerformance          # SetVisualFXAppearance
+SetVisualFXAppearance           # SetVisualFXPerformance
 # EnableTitleBarColor           # DisableTitleBarColor
 # SetAppsDarkMode               # SetAppsLightMode
 # SetSystemLightMode            # SetSystemDarkMode
@@ -160,9 +160,9 @@ EnableNavPaneExpand             # DisableNavPaneExpand
 HideSyncNotifications           # ShowSyncNotifications
 HideRecentShortcuts             # ShowRecentShortcuts
 SetExplorerThisPC               # SetExplorerQuickAccess
-HideQuickAccess                 # ShowQuickAccess
-# HideRecycleBinFromDesktop     # ShowRecycleBinOnDesktop
-ShowThisPCOnDesktop             # HideThisPCFromDesktop
+ShowQuickAccess                 # HideQuickAccess
+HideRecycleBinFromDesktop       # ShowRecycleBinOnDesktop
+HideThisPCFromDesktop           # ShowThisPCOnDesktop
 # ShowUserFolderOnDesktop       # HideUserFolderFromDesktop
 # ShowControlPanelOnDesktop     # HideControlPanelFromDesktop
 # ShowNetworkOnDesktop          # HideNetworkFromDesktop
@@ -170,9 +170,9 @@ ShowThisPCOnDesktop             # HideThisPCFromDesktop
 # ShowBuildNumberOnDesktop      # HideBuildNumberFromDesktop
 HideDesktopFromThisPC           # ShowDesktopInThisPC
 # HideDesktopFromExplorer       # ShowDesktopInExplorer
-HideDocumentsFromThisPC         # ShowDocumentsInThisPC
+ShowDocumentsInThisPC           # HideDocumentsFromThisPC
 # HideDocumentsFromExplorer     # ShowDocumentsInExplorer
-HideDownloadsFromThisPC         # ShowDownloadsInThisPC
+ShowDownloadsInThisPC           # HideDownloadsFromThisPC
 # HideDownloadsFromExplorer     # ShowDownloadsInExplorer
 HideMusicFromThisPC             # ShowMusicInThisPC
 # HideMusicFromExplorer         # ShowMusicInExplorer
@@ -197,7 +197,7 @@ UninstallThirdPartyBloat        # InstallThirdPartyBloat
 # UninstallWindowsStore         # InstallWindowsStore
 DisableXboxFeatures             # EnableXboxFeatures
 # DisableFullscreenOptims       # EnableFullscreenOptims
-DisableAdobeFlash               # EnableAdobeFlash
+EnableAdobeFlash                # DisableAdobeFlash
 DisableEdgePreload              # EnableEdgePreload
 DisableEdgeShortcutCreation     # EnableEdgeShortcutCreation
 DisableIEFirstRun               # EnableIEFirstRun
@@ -238,4 +238,4 @@ RemoveFaxPrinter                # AddFaxPrinter
 
 ### Auxiliary Functions ###
 WaitForKey
-Restart
+# Restart
